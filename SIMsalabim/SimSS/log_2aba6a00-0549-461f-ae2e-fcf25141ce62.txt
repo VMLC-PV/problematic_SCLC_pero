@@ -1,0 +1,835 @@
+Version 5.13
+Size of reals used in simulation: 10 bytes
+Timestamp at start: 7-8-24 10:35:21
+Reading in of parameters:
+l1.ionsMayEnter = 1
+Read parameters for layer 1 from ../../orga_TL.txt
+l2.L = 8E-7
+l2.N_anion = 2E21
+l2.N_cation = 2E21
+l2.N_t_bulk = 1.5E22
+Read parameters for layer 2 from ../../pero.txt
+l3.ionsMayEnter = 1
+Read parameters for layer 3 from ../../orga_TL.txt
+NP = 550
+tolPois = 1E-7
+tolDens = 1E-6
+couplePC = 10
+minAcc = 0.1
+maxAcc = 0.1
+grad = 4
+Vscan = -1
+Vmax = 50
+timeout = 540
+JVFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/JV_2aba6a00-0549-461f-ae2e-fcf25141ce62.dat
+scParsFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/scPars_2aba6a00-0549-461f-ae2e-fcf25141ce62.txt
+logFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/log_2aba6a00-0549-461f-ae2e-fcf25141ce62.txt
+Read simulation setup from /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/simulation_setup_sclc_tl.txt
+
+The following voltages will be simulated:
+  i       V    UpdateIons   Store
+  1    50.000     TRUE      TRUE
+  2    48.002     TRUE      TRUE
+  3    46.085     TRUE      TRUE
+  4    44.243     TRUE      TRUE
+  5    42.476     TRUE      TRUE
+  6    40.779     TRUE      TRUE
+  7    39.149     TRUE      TRUE
+  8    37.585     TRUE      TRUE
+  9    36.084     TRUE      TRUE
+ 10    34.642     TRUE      TRUE
+ 11    33.258     TRUE      TRUE
+ 12    31.929     TRUE      TRUE
+ 13    30.653     TRUE      TRUE
+ 14    29.428     TRUE      TRUE
+ 15    28.252     TRUE      TRUE
+ 16    27.124     TRUE      TRUE
+ 17    26.040     TRUE      TRUE
+ 18    24.999     TRUE      TRUE
+ 19    24.000     TRUE      TRUE
+ 20    23.041     TRUE      TRUE
+ 21    22.120     TRUE      TRUE
+ 22    21.236     TRUE      TRUE
+ 23    20.388     TRUE      TRUE
+ 24    19.573     TRUE      TRUE
+ 25    18.791     TRUE      TRUE
+ 26    18.040     TRUE      TRUE
+ 27    17.319     TRUE      TRUE
+ 28    16.627     TRUE      TRUE
+ 29    15.962     TRUE      TRUE
+ 30    15.324     TRUE      TRUE
+ 31    14.712     TRUE      TRUE
+ 32    14.124     TRUE      TRUE
+ 33    13.559     TRUE      TRUE
+ 34    13.017     TRUE      TRUE
+ 35    12.497     TRUE      TRUE
+ 36    11.997     TRUE      TRUE
+ 37    11.518     TRUE      TRUE
+ 38    11.057     TRUE      TRUE
+ 39    10.615     TRUE      TRUE
+ 40    10.191     TRUE      TRUE
+ 41     9.783     TRUE      TRUE
+ 42     9.392     TRUE      TRUE
+ 43     9.016     TRUE      TRUE
+ 44     8.656     TRUE      TRUE
+ 45     8.310     TRUE      TRUE
+ 46     7.977     TRUE      TRUE
+ 47     7.658     TRUE      TRUE
+ 48     7.352     TRUE      TRUE
+ 49     7.058     TRUE      TRUE
+ 50     6.776     TRUE      TRUE
+ 51     6.505     TRUE      TRUE
+ 52     6.244     TRUE      TRUE
+ 53     5.995     TRUE      TRUE
+ 54     5.755     TRUE      TRUE
+ 55     5.524     TRUE      TRUE
+ 56     5.303     TRUE      TRUE
+ 57     5.091     TRUE      TRUE
+ 58     4.887     TRUE      TRUE
+ 59     4.692     TRUE      TRUE
+ 60     4.504     TRUE      TRUE
+ 61     4.324     TRUE      TRUE
+ 62     4.151     TRUE      TRUE
+ 63     3.984     TRUE      TRUE
+ 64     3.825     TRUE      TRUE
+ 65     3.672     TRUE      TRUE
+ 66     3.525     TRUE      TRUE
+ 67     3.383     TRUE      TRUE
+ 68     3.248     TRUE      TRUE
+ 69     3.118     TRUE      TRUE
+ 70     2.993     TRUE      TRUE
+ 71     2.873     TRUE      TRUE
+ 72     2.758     TRUE      TRUE
+ 73     2.647     TRUE      TRUE
+ 74     2.541     TRUE      TRUE
+ 75     2.439     TRUE      TRUE
+ 76     2.341     TRUE      TRUE
+ 77     2.247     TRUE      TRUE
+ 78     2.157     TRUE      TRUE
+ 79     2.071     TRUE      TRUE
+ 80     1.988     TRUE      TRUE
+ 81     1.908     TRUE      TRUE
+ 82     1.831     TRUE      TRUE
+ 83     1.758     TRUE      TRUE
+ 84     1.687     TRUE      TRUE
+ 85     1.619     TRUE      TRUE
+ 86     1.554     TRUE      TRUE
+ 87     1.492     TRUE      TRUE
+ 88     1.432     TRUE      TRUE
+ 89     1.374     TRUE      TRUE
+ 90     1.319     TRUE      TRUE
+ 91     1.266     TRUE      TRUE
+ 92     1.215     TRUE      TRUE
+ 93     1.166     TRUE      TRUE
+ 94     1.119     TRUE      TRUE
+ 95     1.074     TRUE      TRUE
+ 96     1.030     TRUE      TRUE
+ 97     0.989     TRUE      TRUE
+ 98     0.949     TRUE      TRUE
+ 99     0.911     TRUE      TRUE
+100     0.874     TRUE      TRUE
+101     0.839     TRUE      TRUE
+102     0.805     TRUE      TRUE
+103     0.772     TRUE      TRUE
+104     0.741     TRUE      TRUE
+105     0.711     TRUE      TRUE
+106     0.682     TRUE      TRUE
+107     0.655     TRUE      TRUE
+108     0.628     TRUE      TRUE
+109     0.602     TRUE      TRUE
+110     0.578     TRUE      TRUE
+111     0.555     TRUE      TRUE
+112     0.532     TRUE      TRUE
+113     0.510     TRUE      TRUE
+114     0.490     TRUE      TRUE
+115     0.470     TRUE      TRUE
+116     0.450     TRUE      TRUE
+117     0.432     TRUE      TRUE
+118     0.414     TRUE      TRUE
+119     0.397     TRUE      TRUE
+120     0.381     TRUE      TRUE
+121     0.366     TRUE      TRUE
+122     0.351     TRUE      TRUE
+123     0.336     TRUE      TRUE
+124     0.322     TRUE      TRUE
+125     0.309     TRUE      TRUE
+126     0.296     TRUE      TRUE
+127     0.284     TRUE      TRUE
+128     0.272     TRUE      TRUE
+129     0.261     TRUE      TRUE
+130     0.250     TRUE      TRUE
+131     0.240     TRUE      TRUE
+132     0.230     TRUE      TRUE
+133     0.220     TRUE      TRUE
+134     0.211     TRUE      TRUE
+135     0.202     TRUE      TRUE
+136     0.194     TRUE      TRUE
+137     0.186     TRUE      TRUE
+138     0.178     TRUE      TRUE
+139     0.170     TRUE      TRUE
+140     0.163     TRUE      TRUE
+141     0.156     TRUE      TRUE
+142     0.150     TRUE      TRUE
+143     0.143     TRUE      TRUE
+144     0.137     TRUE      TRUE
+145     0.131     TRUE      TRUE
+146     0.126     TRUE      TRUE
+147     0.120     TRUE      TRUE
+148     0.115     TRUE      TRUE
+149     0.110     TRUE      TRUE
+150     0.105     TRUE      TRUE
+151     0.101     TRUE      TRUE
+152     0.096     TRUE      TRUE
+153     0.092     TRUE      TRUE
+154     0.088     TRUE      TRUE
+155     0.084     TRUE      TRUE
+156     0.080     TRUE      TRUE
+157     0.077     TRUE      TRUE
+158     0.073     TRUE      TRUE
+159     0.070     TRUE      TRUE
+160     0.067     TRUE      TRUE
+161     0.064     TRUE      TRUE
+162     0.061     TRUE      TRUE
+163     0.058     TRUE      TRUE
+164     0.055     TRUE      TRUE
+165     0.052     TRUE      TRUE
+166     0.050     TRUE      TRUE
+167     0.048     TRUE      TRUE
+168     0.045     TRUE      TRUE
+169     0.043     TRUE      TRUE
+170     0.041     TRUE      TRUE
+171     0.039     TRUE      TRUE
+172     0.037     TRUE      TRUE
+173     0.035     TRUE      TRUE
+174     0.033     TRUE      TRUE
+175     0.032     TRUE      TRUE
+176     0.030     TRUE      TRUE
+177     0.028     TRUE      TRUE
+178     0.027     TRUE      TRUE
+179     0.025     TRUE      TRUE
+180     0.024     TRUE      TRUE
+181     0.023     TRUE      TRUE
+182     0.021     TRUE      TRUE
+183     0.020     TRUE      TRUE
+184     0.019     TRUE      TRUE
+185     0.018     TRUE      TRUE
+186     0.017     TRUE      TRUE
+187     0.015     TRUE      TRUE
+188     0.014     TRUE      TRUE
+189     0.013     TRUE      TRUE
+190     0.013     TRUE      TRUE
+191     0.012     TRUE      TRUE
+192     0.011     TRUE      TRUE
+193     0.010     TRUE      TRUE
+194     0.009     TRUE      TRUE
+195     0.008     TRUE      TRUE
+196     0.008     TRUE      TRUE
+197     0.007     TRUE      TRUE
+198     0.006     TRUE      TRUE
+199     0.006     TRUE      TRUE
+200     0.005     TRUE      TRUE
+
+
+Messages from main solver at voltage= 50.000:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.2775E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.1111E-1
+
+
+Messages from main solver at voltage= 0.272:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =7.7643E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 9.8642E-5
+
+
+Messages from main solver at voltage= 0.240:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =3.0925E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 3.9052E-5
+
+
+Messages from main solver at voltage= 0.211:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.3897E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 7.5585E-5
+
+
+Messages from main solver at voltage= 0.202:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =9.5523E-16
+- Poisson solver converged: TRUE
+- relative change of densities: 1.1070E-4
+
+
+Messages from main solver at voltage= 0.194:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.0359E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 6.3937E-5
+
+
+Messages from main solver at voltage= 0.170:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =3.5933E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 7.3040E-5
+
+
+Messages from main solver at voltage= 0.156:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.2398E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 5.7512E-5
+
+
+Messages from main solver at voltage= 0.143:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =4.8491E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 3.3861E-5
+
+
+Messages from main solver at voltage= 0.137:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =6.1342E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 8.1431E-5
+
+
+Messages from main solver at voltage= 0.131:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =4.1796E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.2056E-6
+
+
+Messages from main solver at voltage= 0.126:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.7772E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.2193E-4
+
+
+Messages from main solver at voltage= 0.120:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =7.4061E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 4.2462E-5
+
+
+Messages from main solver at voltage= 0.115:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =6.3471E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 9.5099E-5
+
+
+Messages from main solver at voltage= 0.110:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =5.4947E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 6.3795E-5
+
+
+Messages from main solver at voltage= 0.105:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =4.409E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 6.6173E-5
+
+
+Messages from main solver at voltage= 0.101:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.3468E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.8758E-4
+
+
+Messages from main solver at voltage= 0.096:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.0228E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 2.1758E-4
+
+
+Messages from main solver at voltage= 0.092:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.8569E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.4311E-4
+
+
+Messages from main solver at voltage= 0.088:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =5.0007E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 3.2636E-5
+
+
+Messages from main solver at voltage= 0.084:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.0843E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.1853E-4
+
+
+Messages from main solver at voltage= 0.080:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =9.6414E-16
+- Poisson solver converged: TRUE
+- relative change of densities: 3.1930E-4
+
+
+Messages from main solver at voltage= 0.073:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =5.1681E-16
+- Poisson solver converged: TRUE
+- relative change of densities: 8.5704E-5
+
+
+Messages from main solver at voltage= 0.070:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.4393E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.7488E-4
+
+
+Messages from main solver at voltage= 0.067:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.3711E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.3498E-4
+
+
+Messages from main solver at voltage= 0.064:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.5794E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 3.0414E-4
+
+
+Messages from main solver at voltage= 0.061:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =8.3443E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 2.5660E-4
+
+
+Messages from main solver at voltage= 0.058:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =3.3699E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 3.6719E-5
+
+
+Messages from main solver at voltage= 0.055:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.0547E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.8434E-5
+
+
+Messages from main solver at voltage= 0.052:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =9.351E-16
+- Poisson solver converged: TRUE
+- relative change of densities: 2.8942E-4
+
+
+Messages from main solver at voltage= 0.048:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =7.1727E-16
+- Poisson solver converged: TRUE
+- relative change of densities: 4.5186E-5
+
+
+Messages from main solver at voltage= 0.043:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.4693E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 4.5956E-6
+
+
+Messages from main solver at voltage= 0.041:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =5.8505E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.2515E-4
+
+
+Messages from main solver at voltage= 0.039:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.5312E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.9063E-4
+
+
+Messages from main solver at voltage= 0.037:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.2142E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 1.7385E-4
+
+
+Messages from main solver at voltage= 0.035:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =7.2284E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 3.3570E-5
+
+
+Messages from main solver at voltage= 0.033:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.2004E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 1.3470E-4
+
+
+Messages from main solver at voltage= 0.032:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.9814E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 3.1041E-5
+
+
+Messages from main solver at voltage= 0.030:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.4378E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 2.4874E-4
+
+
+Messages from main solver at voltage= 0.028:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.7134E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 9.2651E-5
+
+
+Messages from main solver at voltage= 0.027:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.1925E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 3.7031E-4
+
+
+Messages from main solver at voltage= 0.025:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =6.9834E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 9.3741E-5
+
+
+Messages from main solver at voltage= 0.024:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.0384E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 2.3960E-4
+
+
+Messages from main solver at voltage= 0.023:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.5349E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 2.3203E-4
+
+
+Messages from main solver at voltage= 0.020:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.3917E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 1.4045E-4
+
+
+Messages from main solver at voltage= 0.019:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.0062E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 5.1855E-5
+
+
+Messages from main solver at voltage= 0.018:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.3394E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 2.1780E-4
+
+
+Messages from main solver at voltage= 0.017:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =4.5011E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 2.5713E-4
+
+
+Messages from main solver at voltage= 0.015:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.4487E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.1866E-4
+
+
+Messages from main solver at voltage= 0.014:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.2005E-15
+- Poisson solver converged: TRUE
+- relative change of densities: 1.6841E-4
+
+
+Messages from main solver at voltage= 0.013:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =3.2054E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 2.4591E-4
+
+
+Messages from main solver at voltage= 0.013:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =9.7455E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.9449E-4
+
+
+Messages from main solver at voltage= 0.012:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.0566E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.4745E-4
+
+
+Messages from main solver at voltage= 0.011:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.4426E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 3.4748E-4
+
+
+Messages from main solver at voltage= 0.010:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.2504E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 5.6566E-5
+
+
+Messages from main solver at voltage= 0.009:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =9.0826E-16
+- Poisson solver converged: TRUE
+- relative change of densities: 4.3344E-5
+
+
+Messages from main solver at voltage= 0.008:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.4507E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 6.5600E-5
+
+
+Messages from main solver at voltage= 0.008:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =1.5395E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.5541E-5
+
+
+Messages from main solver at voltage= 0.007:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =6.8909E-16
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 2.6503E-4
+
+
+Messages from main solver at voltage= 0.006:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =2.4731E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 9.3528E-5
+
+
+Messages from main solver at voltage= 0.006:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =3.7606E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.6020E-4
+
+
+Messages from main solver at voltage= 0.005:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =4.2364E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 1.4162E-4
+
+Timestamp at end: 7-8-24 10:42:18
+Total run time: 416.397 seconds.

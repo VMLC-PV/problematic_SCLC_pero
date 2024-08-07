@@ -1,0 +1,233 @@
+Version 5.13
+Size of reals used in simulation: 10 bytes
+Timestamp at start: 7-8-24 11:15:40
+Reading in of parameters:
+l1.ionsMayEnter = 1
+Read parameters for layer 1 from ../../orga_TL.txt
+l2.L = 5E-7
+l2.N_anion = 1E22
+l2.N_cation = 1E22
+l2.N_t_bulk = 1E22
+Read parameters for layer 2 from ../../pero.txt
+l3.ionsMayEnter = 1
+Read parameters for layer 3 from ../../orga_TL.txt
+NP = 550
+tolPois = 1E-7
+tolDens = 1E-6
+couplePC = 10
+minAcc = 0.1
+maxAcc = 0.1
+grad = 4
+Vscan = 1
+Vmax = 50
+timeout = 540
+JVFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/JV_f66d0e7d-47c1-4514-8ad5-4d6f799c4d95.dat
+scParsFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/scPars_f66d0e7d-47c1-4514-8ad5-4d6f799c4d95.txt
+logFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/log_f66d0e7d-47c1-4514-8ad5-4d6f799c4d95.txt
+Read simulation setup from /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/simulation_setup_sclc_tl.txt
+
+The following voltages will be simulated:
+  i       V    UpdateIons   Store
+  1     0.005     TRUE      TRUE
+  2     0.006     TRUE      TRUE
+  3     0.006     TRUE      TRUE
+  4     0.007     TRUE      TRUE
+  5     0.008     TRUE      TRUE
+  6     0.008     TRUE      TRUE
+  7     0.009     TRUE      TRUE
+  8     0.010     TRUE      TRUE
+  9     0.011     TRUE      TRUE
+ 10     0.012     TRUE      TRUE
+ 11     0.013     TRUE      TRUE
+ 12     0.013     TRUE      TRUE
+ 13     0.014     TRUE      TRUE
+ 14     0.015     TRUE      TRUE
+ 15     0.017     TRUE      TRUE
+ 16     0.018     TRUE      TRUE
+ 17     0.019     TRUE      TRUE
+ 18     0.020     TRUE      TRUE
+ 19     0.021     TRUE      TRUE
+ 20     0.023     TRUE      TRUE
+ 21     0.024     TRUE      TRUE
+ 22     0.025     TRUE      TRUE
+ 23     0.027     TRUE      TRUE
+ 24     0.028     TRUE      TRUE
+ 25     0.030     TRUE      TRUE
+ 26     0.032     TRUE      TRUE
+ 27     0.033     TRUE      TRUE
+ 28     0.035     TRUE      TRUE
+ 29     0.037     TRUE      TRUE
+ 30     0.039     TRUE      TRUE
+ 31     0.041     TRUE      TRUE
+ 32     0.043     TRUE      TRUE
+ 33     0.045     TRUE      TRUE
+ 34     0.048     TRUE      TRUE
+ 35     0.050     TRUE      TRUE
+ 36     0.052     TRUE      TRUE
+ 37     0.055     TRUE      TRUE
+ 38     0.058     TRUE      TRUE
+ 39     0.061     TRUE      TRUE
+ 40     0.064     TRUE      TRUE
+ 41     0.067     TRUE      TRUE
+ 42     0.070     TRUE      TRUE
+ 43     0.073     TRUE      TRUE
+ 44     0.077     TRUE      TRUE
+ 45     0.080     TRUE      TRUE
+ 46     0.084     TRUE      TRUE
+ 47     0.088     TRUE      TRUE
+ 48     0.092     TRUE      TRUE
+ 49     0.096     TRUE      TRUE
+ 50     0.101     TRUE      TRUE
+ 51     0.105     TRUE      TRUE
+ 52     0.110     TRUE      TRUE
+ 53     0.115     TRUE      TRUE
+ 54     0.120     TRUE      TRUE
+ 55     0.126     TRUE      TRUE
+ 56     0.131     TRUE      TRUE
+ 57     0.137     TRUE      TRUE
+ 58     0.143     TRUE      TRUE
+ 59     0.150     TRUE      TRUE
+ 60     0.156     TRUE      TRUE
+ 61     0.163     TRUE      TRUE
+ 62     0.170     TRUE      TRUE
+ 63     0.178     TRUE      TRUE
+ 64     0.186     TRUE      TRUE
+ 65     0.194     TRUE      TRUE
+ 66     0.202     TRUE      TRUE
+ 67     0.211     TRUE      TRUE
+ 68     0.220     TRUE      TRUE
+ 69     0.230     TRUE      TRUE
+ 70     0.240     TRUE      TRUE
+ 71     0.250     TRUE      TRUE
+ 72     0.261     TRUE      TRUE
+ 73     0.272     TRUE      TRUE
+ 74     0.284     TRUE      TRUE
+ 75     0.296     TRUE      TRUE
+ 76     0.309     TRUE      TRUE
+ 77     0.322     TRUE      TRUE
+ 78     0.336     TRUE      TRUE
+ 79     0.351     TRUE      TRUE
+ 80     0.366     TRUE      TRUE
+ 81     0.381     TRUE      TRUE
+ 82     0.397     TRUE      TRUE
+ 83     0.414     TRUE      TRUE
+ 84     0.432     TRUE      TRUE
+ 85     0.450     TRUE      TRUE
+ 86     0.470     TRUE      TRUE
+ 87     0.490     TRUE      TRUE
+ 88     0.510     TRUE      TRUE
+ 89     0.532     TRUE      TRUE
+ 90     0.555     TRUE      TRUE
+ 91     0.578     TRUE      TRUE
+ 92     0.602     TRUE      TRUE
+ 93     0.628     TRUE      TRUE
+ 94     0.655     TRUE      TRUE
+ 95     0.682     TRUE      TRUE
+ 96     0.711     TRUE      TRUE
+ 97     0.741     TRUE      TRUE
+ 98     0.772     TRUE      TRUE
+ 99     0.805     TRUE      TRUE
+100     0.839     TRUE      TRUE
+101     0.874     TRUE      TRUE
+102     0.911     TRUE      TRUE
+103     0.949     TRUE      TRUE
+104     0.989     TRUE      TRUE
+105     1.030     TRUE      TRUE
+106     1.074     TRUE      TRUE
+107     1.119     TRUE      TRUE
+108     1.166     TRUE      TRUE
+109     1.215     TRUE      TRUE
+110     1.266     TRUE      TRUE
+111     1.319     TRUE      TRUE
+112     1.374     TRUE      TRUE
+113     1.432     TRUE      TRUE
+114     1.492     TRUE      TRUE
+115     1.554     TRUE      TRUE
+116     1.619     TRUE      TRUE
+117     1.687     TRUE      TRUE
+118     1.758     TRUE      TRUE
+119     1.831     TRUE      TRUE
+120     1.908     TRUE      TRUE
+121     1.988     TRUE      TRUE
+122     2.071     TRUE      TRUE
+123     2.157     TRUE      TRUE
+124     2.247     TRUE      TRUE
+125     2.341     TRUE      TRUE
+126     2.439     TRUE      TRUE
+127     2.541     TRUE      TRUE
+128     2.647     TRUE      TRUE
+129     2.758     TRUE      TRUE
+130     2.873     TRUE      TRUE
+131     2.993     TRUE      TRUE
+132     3.118     TRUE      TRUE
+133     3.248     TRUE      TRUE
+134     3.383     TRUE      TRUE
+135     3.525     TRUE      TRUE
+136     3.672     TRUE      TRUE
+137     3.825     TRUE      TRUE
+138     3.984     TRUE      TRUE
+139     4.151     TRUE      TRUE
+140     4.324     TRUE      TRUE
+141     4.504     TRUE      TRUE
+142     4.692     TRUE      TRUE
+143     4.887     TRUE      TRUE
+144     5.091     TRUE      TRUE
+145     5.303     TRUE      TRUE
+146     5.524     TRUE      TRUE
+147     5.755     TRUE      TRUE
+148     5.995     TRUE      TRUE
+149     6.244     TRUE      TRUE
+150     6.505     TRUE      TRUE
+151     6.776     TRUE      TRUE
+152     7.058     TRUE      TRUE
+153     7.352     TRUE      TRUE
+154     7.658     TRUE      TRUE
+155     7.977     TRUE      TRUE
+156     8.310     TRUE      TRUE
+157     8.656     TRUE      TRUE
+158     9.016     TRUE      TRUE
+159     9.392     TRUE      TRUE
+160     9.783     TRUE      TRUE
+161    10.191     TRUE      TRUE
+162    10.615     TRUE      TRUE
+163    11.057     TRUE      TRUE
+164    11.518     TRUE      TRUE
+165    11.997     TRUE      TRUE
+166    12.497     TRUE      TRUE
+167    13.017     TRUE      TRUE
+168    13.559     TRUE      TRUE
+169    14.124     TRUE      TRUE
+170    14.712     TRUE      TRUE
+171    15.324     TRUE      TRUE
+172    15.962     TRUE      TRUE
+173    16.627     TRUE      TRUE
+174    17.319     TRUE      TRUE
+175    18.040     TRUE      TRUE
+176    18.791     TRUE      TRUE
+177    19.573     TRUE      TRUE
+178    20.388     TRUE      TRUE
+179    21.236     TRUE      TRUE
+180    22.120     TRUE      TRUE
+181    23.041     TRUE      TRUE
+182    24.000     TRUE      TRUE
+183    24.999     TRUE      TRUE
+184    26.040     TRUE      TRUE
+185    27.124     TRUE      TRUE
+186    28.252     TRUE      TRUE
+187    29.428     TRUE      TRUE
+188    30.653     TRUE      TRUE
+189    31.929     TRUE      TRUE
+190    33.258     TRUE      TRUE
+191    34.642     TRUE      TRUE
+192    36.084     TRUE      TRUE
+193    37.585     TRUE      TRUE
+194    39.149     TRUE      TRUE
+195    40.779     TRUE      TRUE
+196    42.476     TRUE      TRUE
+197    44.243     TRUE      TRUE
+198    46.085     TRUE      TRUE
+199    48.002     TRUE      TRUE
+200    50.000     TRUE      TRUE
+
+Timestamp at end: 7-8-24 11:17:54
+Total run time: 133.461 seconds.

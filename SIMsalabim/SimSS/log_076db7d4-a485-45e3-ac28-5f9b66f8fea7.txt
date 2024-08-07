@@ -1,0 +1,245 @@
+Version 5.13
+Size of reals used in simulation: 10 bytes
+Timestamp at start: 7-8-24 13:06:28
+Reading in of parameters:
+l1.eps_r = 5
+l1.N_c = 1E27
+Read parameters for layer 1 from ../../orga_TL.txt
+l2.L = 5E-7
+l2.N_anion = 2E21
+l2.N_cation = 2E21
+l2.N_t_bulk = 1E22
+Read parameters for layer 2 from ../../pero.txt
+l3.eps_r = 5
+l3.E_c = 4.2
+l3.N_c = 1E27
+Read parameters for layer 3 from ../../orga_TL.txt
+W_R = 4.2
+NP = 550
+tolPois = 1E-7
+tolDens = 1E-6
+couplePC = 10
+minAcc = 0.1
+maxAcc = 0.1
+grad = 10
+Vscan = -1
+Vmax = 50
+timeout = 540
+useExpData = 1
+expJV = exp_JV.csv
+JVFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/JV_076db7d4-a485-45e3-ac28-5f9b66f8fea7.dat
+scParsFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/scPars_076db7d4-a485-45e3-ac28-5f9b66f8fea7.txt
+logFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/log_076db7d4-a485-45e3-ac28-5f9b66f8fea7.txt
+Read simulation setup from /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/simulation_setup_sclc_tl.txt
+
+Read experiment JV curve from exp_JV.csv.
+This overrides the voltage distribution that is in the parameter file
+and any voltage parameters passed via the command line.
+Vmin: -51.0000 Vmax: 51.0000
+
+
+The following voltages will be simulated:
+  i       V    UpdateIons   Store
+  1   -51.000     TRUE      TRUE
+  2   -50.000     TRUE      TRUE
+  3   -45.558     TRUE      TRUE
+  4   -41.511     TRUE      TRUE
+  5   -37.823     TRUE      TRUE
+  6   -34.463     TRUE      TRUE
+  7   -31.401     TRUE      TRUE
+  8   -28.612     TRUE      TRUE
+  9   -26.070     TRUE      TRUE
+ 10   -23.754     TRUE      TRUE
+ 11   -21.644     TRUE      TRUE
+ 12   -19.721     TRUE      TRUE
+ 13   -17.969     TRUE      TRUE
+ 14   -16.373     TRUE      TRUE
+ 15   -14.918     TRUE      TRUE
+ 16   -13.593     TRUE      TRUE
+ 17   -12.385     TRUE      TRUE
+ 18   -11.285     TRUE      TRUE
+ 19   -10.283     TRUE      TRUE
+ 20    -9.369     TRUE      TRUE
+ 21    -8.537     TRUE      TRUE
+ 22    -7.778     TRUE      TRUE
+ 23    -7.087     TRUE      TRUE
+ 24    -6.458     TRUE      TRUE
+ 25    -5.884     TRUE      TRUE
+ 26    -5.361     TRUE      TRUE
+ 27    -4.885     TRUE      TRUE
+ 28    -4.451     TRUE      TRUE
+ 29    -4.056     TRUE      TRUE
+ 30    -3.695     TRUE      TRUE
+ 31    -3.367     TRUE      TRUE
+ 32    -3.068     TRUE      TRUE
+ 33    -2.795     TRUE      TRUE
+ 34    -2.547     TRUE      TRUE
+ 35    -2.321     TRUE      TRUE
+ 36    -2.115     TRUE      TRUE
+ 37    -1.927     TRUE      TRUE
+ 38    -1.756     TRUE      TRUE
+ 39    -1.600     TRUE      TRUE
+ 40    -1.458     TRUE      TRUE
+ 41    -1.328     TRUE      TRUE
+ 42    -1.210     TRUE      TRUE
+ 43    -1.103     TRUE      TRUE
+ 44    -1.005     TRUE      TRUE
+ 45    -0.915     TRUE      TRUE
+ 46    -0.834     TRUE      TRUE
+ 47    -0.760     TRUE      TRUE
+ 48    -0.692     TRUE      TRUE
+ 49    -0.631     TRUE      TRUE
+ 50    -0.575     TRUE      TRUE
+ 51    -0.524     TRUE      TRUE
+ 52    -0.477     TRUE      TRUE
+ 53    -0.435     TRUE      TRUE
+ 54    -0.396     TRUE      TRUE
+ 55    -0.361     TRUE      TRUE
+ 56    -0.329     TRUE      TRUE
+ 57    -0.300     TRUE      TRUE
+ 58    -0.273     TRUE      TRUE
+ 59    -0.249     TRUE      TRUE
+ 60    -0.227     TRUE      TRUE
+ 61    -0.207     TRUE      TRUE
+ 62    -0.188     TRUE      TRUE
+ 63    -0.172     TRUE      TRUE
+ 64    -0.156     TRUE      TRUE
+ 65    -0.142     TRUE      TRUE
+ 66    -0.130     TRUE      TRUE
+ 67    -0.118     TRUE      TRUE
+ 68    -0.108     TRUE      TRUE
+ 69    -0.098     TRUE      TRUE
+ 70    -0.089     TRUE      TRUE
+ 71    -0.081     TRUE      TRUE
+ 72    -0.074     TRUE      TRUE
+ 73    -0.068     TRUE      TRUE
+ 74    -0.062     TRUE      TRUE
+ 75    -0.056     TRUE      TRUE
+ 76    -0.051     TRUE      TRUE
+ 77    -0.047     TRUE      TRUE
+ 78    -0.042     TRUE      TRUE
+ 79    -0.039     TRUE      TRUE
+ 80    -0.035     TRUE      TRUE
+ 81    -0.032     TRUE      TRUE
+ 82    -0.029     TRUE      TRUE
+ 83    -0.027     TRUE      TRUE
+ 84    -0.024     TRUE      TRUE
+ 85    -0.022     TRUE      TRUE
+ 86    -0.020     TRUE      TRUE
+ 87    -0.018     TRUE      TRUE
+ 88    -0.017     TRUE      TRUE
+ 89    -0.015     TRUE      TRUE
+ 90    -0.014     TRUE      TRUE
+ 91    -0.013     TRUE      TRUE
+ 92    -0.012     TRUE      TRUE
+ 93    -0.011     TRUE      TRUE
+ 94    -0.010     TRUE      TRUE
+ 95    -0.009     TRUE      TRUE
+ 96    -0.008     TRUE      TRUE
+ 97    -0.007     TRUE      TRUE
+ 98    -0.007     TRUE      TRUE
+ 99    -0.006     TRUE      TRUE
+100    -0.005     TRUE      TRUE
+101    -0.005     TRUE      TRUE
+102     0.005     TRUE      TRUE
+103     0.005     TRUE      TRUE
+104     0.006     TRUE      TRUE
+105     0.007     TRUE      TRUE
+106     0.007     TRUE      TRUE
+107     0.008     TRUE      TRUE
+108     0.009     TRUE      TRUE
+109     0.010     TRUE      TRUE
+110     0.011     TRUE      TRUE
+111     0.012     TRUE      TRUE
+112     0.013     TRUE      TRUE
+113     0.014     TRUE      TRUE
+114     0.015     TRUE      TRUE
+115     0.017     TRUE      TRUE
+116     0.018     TRUE      TRUE
+117     0.020     TRUE      TRUE
+118     0.022     TRUE      TRUE
+119     0.024     TRUE      TRUE
+120     0.027     TRUE      TRUE
+121     0.029     TRUE      TRUE
+122     0.032     TRUE      TRUE
+123     0.035     TRUE      TRUE
+124     0.039     TRUE      TRUE
+125     0.042     TRUE      TRUE
+126     0.047     TRUE      TRUE
+127     0.051     TRUE      TRUE
+128     0.056     TRUE      TRUE
+129     0.062     TRUE      TRUE
+130     0.068     TRUE      TRUE
+131     0.074     TRUE      TRUE
+132     0.081     TRUE      TRUE
+133     0.089     TRUE      TRUE
+134     0.098     TRUE      TRUE
+135     0.108     TRUE      TRUE
+136     0.118     TRUE      TRUE
+137     0.130     TRUE      TRUE
+138     0.142     TRUE      TRUE
+139     0.156     TRUE      TRUE
+140     0.172     TRUE      TRUE
+141     0.188     TRUE      TRUE
+142     0.207     TRUE      TRUE
+143     0.227     TRUE      TRUE
+144     0.249     TRUE      TRUE
+145     0.273     TRUE      TRUE
+146     0.300     TRUE      TRUE
+147     0.329     TRUE      TRUE
+148     0.361     TRUE      TRUE
+149     0.396     TRUE      TRUE
+150     0.435     TRUE      TRUE
+151     0.477     TRUE      TRUE
+152     0.524     TRUE      TRUE
+153     0.575     TRUE      TRUE
+154     0.631     TRUE      TRUE
+155     0.692     TRUE      TRUE
+156     0.760     TRUE      TRUE
+157     0.834     TRUE      TRUE
+158     0.915     TRUE      TRUE
+159     1.005     TRUE      TRUE
+160     1.103     TRUE      TRUE
+161     1.210     TRUE      TRUE
+162     1.328     TRUE      TRUE
+163     1.458     TRUE      TRUE
+164     1.600     TRUE      TRUE
+165     1.756     TRUE      TRUE
+166     1.927     TRUE      TRUE
+167     2.115     TRUE      TRUE
+168     2.321     TRUE      TRUE
+169     2.547     TRUE      TRUE
+170     2.795     TRUE      TRUE
+171     3.068     TRUE      TRUE
+172     3.367     TRUE      TRUE
+173     3.695     TRUE      TRUE
+174     4.056     TRUE      TRUE
+175     4.451     TRUE      TRUE
+176     4.885     TRUE      TRUE
+177     5.361     TRUE      TRUE
+178     5.884     TRUE      TRUE
+179     6.458     TRUE      TRUE
+180     7.087     TRUE      TRUE
+181     7.778     TRUE      TRUE
+182     8.537     TRUE      TRUE
+183     9.369     TRUE      TRUE
+184    10.283     TRUE      TRUE
+185    11.285     TRUE      TRUE
+186    12.385     TRUE      TRUE
+187    13.593     TRUE      TRUE
+188    14.918     TRUE      TRUE
+189    16.373     TRUE      TRUE
+190    17.969     TRUE      TRUE
+191    19.721     TRUE      TRUE
+192    21.644     TRUE      TRUE
+193    23.754     TRUE      TRUE
+194    26.070     TRUE      TRUE
+195    28.612     TRUE      TRUE
+196    31.401     TRUE      TRUE
+197    34.463     TRUE      TRUE
+198    37.823     TRUE      TRUE
+199    41.511     TRUE      TRUE
+200    45.558     TRUE      TRUE
+201    50.000     TRUE      TRUE
+202    51.000     TRUE      TRUE
+

@@ -1,0 +1,261 @@
+Version 5.13
+Size of reals used in simulation: 10 bytes
+Timestamp at start: 7-8-24 11:33:51
+Reading in of parameters:
+l1.ionsMayEnter = 1
+Read parameters for layer 1 from ../../orga_TL.txt
+l2.L = 1E-6
+l2.N_anion = 3E21
+l2.N_cation = 3E21
+l2.N_t_bulk = 1E22
+Read parameters for layer 2 from ../../pero.txt
+l3.ionsMayEnter = 1
+Read parameters for layer 3 from ../../orga_TL.txt
+NP = 550
+tolPois = 1E-7
+tolDens = 1E-6
+couplePC = 10
+minAcc = 0.1
+maxAcc = 0.1
+grad = 4
+Vscan = 1
+Vmax = 100
+timeout = 540
+JVFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/JV_b51b9812-7447-4f08-bdd2-935ff7f8f605.dat
+scParsFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/scPars_b51b9812-7447-4f08-bdd2-935ff7f8f605.txt
+logFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/log_b51b9812-7447-4f08-bdd2-935ff7f8f605.txt
+Read simulation setup from /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/SimSS/simulation_setup_sclc_tl.txt
+
+The following voltages will be simulated:
+  i       V    UpdateIons   Store
+  1     0.005     TRUE      TRUE
+  2     0.006     TRUE      TRUE
+  3     0.006     TRUE      TRUE
+  4     0.007     TRUE      TRUE
+  5     0.008     TRUE      TRUE
+  6     0.009     TRUE      TRUE
+  7     0.010     TRUE      TRUE
+  8     0.010     TRUE      TRUE
+  9     0.011     TRUE      TRUE
+ 10     0.012     TRUE      TRUE
+ 11     0.013     TRUE      TRUE
+ 12     0.014     TRUE      TRUE
+ 13     0.016     TRUE      TRUE
+ 14     0.017     TRUE      TRUE
+ 15     0.018     TRUE      TRUE
+ 16     0.019     TRUE      TRUE
+ 17     0.020     TRUE      TRUE
+ 18     0.022     TRUE      TRUE
+ 19     0.023     TRUE      TRUE
+ 20     0.025     TRUE      TRUE
+ 21     0.026     TRUE      TRUE
+ 22     0.028     TRUE      TRUE
+ 23     0.030     TRUE      TRUE
+ 24     0.032     TRUE      TRUE
+ 25     0.033     TRUE      TRUE
+ 26     0.035     TRUE      TRUE
+ 27     0.037     TRUE      TRUE
+ 28     0.040     TRUE      TRUE
+ 29     0.042     TRUE      TRUE
+ 30     0.044     TRUE      TRUE
+ 31     0.047     TRUE      TRUE
+ 32     0.049     TRUE      TRUE
+ 33     0.052     TRUE      TRUE
+ 34     0.055     TRUE      TRUE
+ 35     0.058     TRUE      TRUE
+ 36     0.061     TRUE      TRUE
+ 37     0.064     TRUE      TRUE
+ 38     0.067     TRUE      TRUE
+ 39     0.071     TRUE      TRUE
+ 40     0.074     TRUE      TRUE
+ 41     0.078     TRUE      TRUE
+ 42     0.082     TRUE      TRUE
+ 43     0.086     TRUE      TRUE
+ 44     0.091     TRUE      TRUE
+ 45     0.095     TRUE      TRUE
+ 46     0.100     TRUE      TRUE
+ 47     0.105     TRUE      TRUE
+ 48     0.110     TRUE      TRUE
+ 49     0.115     TRUE      TRUE
+ 50     0.121     TRUE      TRUE
+ 51     0.127     TRUE      TRUE
+ 52     0.133     TRUE      TRUE
+ 53     0.140     TRUE      TRUE
+ 54     0.147     TRUE      TRUE
+ 55     0.154     TRUE      TRUE
+ 56     0.161     TRUE      TRUE
+ 57     0.169     TRUE      TRUE
+ 58     0.177     TRUE      TRUE
+ 59     0.185     TRUE      TRUE
+ 60     0.194     TRUE      TRUE
+ 61     0.203     TRUE      TRUE
+ 62     0.213     TRUE      TRUE
+ 63     0.223     TRUE      TRUE
+ 64     0.234     TRUE      TRUE
+ 65     0.245     TRUE      TRUE
+ 66     0.256     TRUE      TRUE
+ 67     0.268     TRUE      TRUE
+ 68     0.281     TRUE      TRUE
+ 69     0.294     TRUE      TRUE
+ 70     0.308     TRUE      TRUE
+ 71     0.322     TRUE      TRUE
+ 72     0.337     TRUE      TRUE
+ 73     0.353     TRUE      TRUE
+ 74     0.369     TRUE      TRUE
+ 75     0.386     TRUE      TRUE
+ 76     0.404     TRUE      TRUE
+ 77     0.423     TRUE      TRUE
+ 78     0.443     TRUE      TRUE
+ 79     0.463     TRUE      TRUE
+ 80     0.484     TRUE      TRUE
+ 81     0.507     TRUE      TRUE
+ 82     0.530     TRUE      TRUE
+ 83     0.555     TRUE      TRUE
+ 84     0.580     TRUE      TRUE
+ 85     0.607     TRUE      TRUE
+ 86     0.635     TRUE      TRUE
+ 87     0.664     TRUE      TRUE
+ 88     0.694     TRUE      TRUE
+ 89     0.726     TRUE      TRUE
+ 90     0.760     TRUE      TRUE
+ 91     0.794     TRUE      TRUE
+ 92     0.831     TRUE      TRUE
+ 93     0.869     TRUE      TRUE
+ 94     0.909     TRUE      TRUE
+ 95     0.950     TRUE      TRUE
+ 96     0.994     TRUE      TRUE
+ 97     1.039     TRUE      TRUE
+ 98     1.087     TRUE      TRUE
+ 99     1.136     TRUE      TRUE
+100     1.188     TRUE      TRUE
+101     1.242     TRUE      TRUE
+102     1.299     TRUE      TRUE
+103     1.358     TRUE      TRUE
+104     1.420     TRUE      TRUE
+105     1.485     TRUE      TRUE
+106     1.552     TRUE      TRUE
+107     1.623     TRUE      TRUE
+108     1.697     TRUE      TRUE
+109     1.774     TRUE      TRUE
+110     1.855     TRUE      TRUE
+111     1.939     TRUE      TRUE
+112     2.027     TRUE      TRUE
+113     2.119     TRUE      TRUE
+114     2.216     TRUE      TRUE
+115     2.316     TRUE      TRUE
+116     2.422     TRUE      TRUE
+117     2.532     TRUE      TRUE
+118     2.647     TRUE      TRUE
+119     2.767     TRUE      TRUE
+120     2.893     TRUE      TRUE
+121     3.024     TRUE      TRUE
+122     3.161     TRUE      TRUE
+123     3.305     TRUE      TRUE
+124     3.454     TRUE      TRUE
+125     3.611     TRUE      TRUE
+126     3.775     TRUE      TRUE
+127     3.946     TRUE      TRUE
+128     4.125     TRUE      TRUE
+129     4.312     TRUE      TRUE
+130     4.508     TRUE      TRUE
+131     4.712     TRUE      TRUE
+132     4.926     TRUE      TRUE
+133     5.149     TRUE      TRUE
+134     5.383     TRUE      TRUE
+135     5.627     TRUE      TRUE
+136     5.882     TRUE      TRUE
+137     6.148     TRUE      TRUE
+138     6.427     TRUE      TRUE
+139     6.718     TRUE      TRUE
+140     7.022     TRUE      TRUE
+141     7.340     TRUE      TRUE
+142     7.673     TRUE      TRUE
+143     8.020     TRUE      TRUE
+144     8.384     TRUE      TRUE
+145     8.763     TRUE      TRUE
+146     9.160     TRUE      TRUE
+147     9.575     TRUE      TRUE
+148    10.009     TRUE      TRUE
+149    10.462     TRUE      TRUE
+150    10.936     TRUE      TRUE
+151    11.431     TRUE      TRUE
+152    11.949     TRUE      TRUE
+153    12.490     TRUE      TRUE
+154    13.055     TRUE      TRUE
+155    13.646     TRUE      TRUE
+156    14.264     TRUE      TRUE
+157    14.910     TRUE      TRUE
+158    15.585     TRUE      TRUE
+159    16.290     TRUE      TRUE
+160    17.028     TRUE      TRUE
+161    17.798     TRUE      TRUE
+162    18.604     TRUE      TRUE
+163    19.446     TRUE      TRUE
+164    20.326     TRUE      TRUE
+165    21.246     TRUE      TRUE
+166    22.208     TRUE      TRUE
+167    23.213     TRUE      TRUE
+168    24.264     TRUE      TRUE
+169    25.362     TRUE      TRUE
+170    26.510     TRUE      TRUE
+171    27.709     TRUE      TRUE
+172    28.963     TRUE      TRUE
+173    30.274     TRUE      TRUE
+174    31.644     TRUE      TRUE
+175    33.076     TRUE      TRUE
+176    34.573     TRUE      TRUE
+177    36.138     TRUE      TRUE
+178    37.773     TRUE      TRUE
+179    39.482     TRUE      TRUE
+180    41.269     TRUE      TRUE
+181    43.136     TRUE      TRUE
+182    45.088     TRUE      TRUE
+183    47.128     TRUE      TRUE
+184    49.261     TRUE      TRUE
+185    51.490     TRUE      TRUE
+186    53.820     TRUE      TRUE
+187    56.255     TRUE      TRUE
+188    58.800     TRUE      TRUE
+189    61.461     TRUE      TRUE
+190    64.242     TRUE      TRUE
+191    67.148     TRUE      TRUE
+192    70.187     TRUE      TRUE
+193    73.362     TRUE      TRUE
+194    76.682     TRUE      TRUE
+195    80.151     TRUE      TRUE
+196    83.778     TRUE      TRUE
+197    87.568     TRUE      TRUE
+198    91.530     TRUE      TRUE
+199    95.671     TRUE      TRUE
+200   100.000     TRUE      TRUE
+
+
+Messages from main solver at voltage= 0.005:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =3.7531E-16
+- Poisson solver converged: TRUE
+- relative change of densities: 2.7934E-5
+
+
+Messages from main solver at voltage= 0.025:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =5.8552E-16
+- Poisson solver converged: TRUE
+- relative change of densities: 1.9143E-5
+
+
+Messages from main solver at voltage= 100.000:
+Overall convergence: FALSE
+Iterations perfomed: 1500
+Poisson solver status:
+- delV =3.7892E-15
+- movement of ions acceptable: TRUE
+- Poisson solver converged: TRUE
+- relative change of densities: 4.5983E-6
+
+Timestamp at end: 7-8-24 11:38:22
+Total run time: 270.962 seconds.
