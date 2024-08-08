@@ -1350,7 +1350,7 @@ def run_all_dops(dop_TL_list,L_pero, eps_r_pero, ions, traps_pero, Vmax, Vscan, 
 
     plt.savefig(os.path.join(res_dir,f'{L_pero*1e9}_dop_TL_list.png'),dpi=300)
 
-def run_fig_2(L_pero, eps_r_pero, ions_bulk_list, traps_pero, Vmax, Vscan, NP, tolPois, tolDens, couplePC, minAcc, maxAcc, grad, simss_device_parameters, str_save, with_TL, rerun=False, ions_in_TLs =False,figsize = (23, 7), to_plot = [1e21,5e21,1e22]):
+def run_fig_2(L_pero, eps_r_pero, ions_bulk_list, traps_pero, Vmax, Vscan, NP, tolPois, tolDens, couplePC, minAcc, maxAcc, grad, simss_device_parameters, str_save, with_TL, rerun=False, ions_in_TLs =False,figsize=(40,16), to_plot = [1e21,5e21,1e22]):
 
     res_dir = os.path.join(os.getcwd(),'results')
     nons_list,ninf_list,nend_list,mu  = [],[],[],[]
@@ -1388,10 +1388,11 @@ def run_fig_2(L_pero, eps_r_pero, ions_bulk_list, traps_pero, Vmax, Vscan, NP, t
     #invert colors
     colors = colors[::-1]
     fig = plt.figure(figsize=figsize)
-    gs = fig.add_gridspec(1, 3, wspace=0.33, hspace=0.3)
+    gs = fig.add_gridspec(2, 2, hspace=0.3)
     ax1 = fig.add_subplot(gs[0, 0])
     ax2 = fig.add_subplot(gs[0, 1])
-    ax3 = fig.add_subplot(gs[0, 2])
+    ax3 = fig.add_subplot(gs[1, 0])
+    ax4 = fig.add_subplot(gs[1, 1])
     # ax1,ax2,ax3,ax4 = plt.subplot(221),plt.subplot(222),plt.subplot(223),plt.subplot(224)
     # ax = plt.gca()
     minJ,maxJ = 1e20,1e-20
@@ -1454,35 +1455,38 @@ def run_fig_2(L_pero, eps_r_pero, ions_bulk_list, traps_pero, Vmax, Vscan, NP, t
         # remove Vext = 0 from data_JV
         if ions in to_plot:
             data_JV = data_JV[data_JV['Vext']!=0]
-            ax1.plot(data_JV['Vext'],data_JV['Jext']/10,label=label,color=colors[i])
+            ax2.plot(data_JV['Vext'],data_JV['Jext']/10,label=label,color=colors[i])
+            if ions == 1e21:
+                ax1.plot(data_JV['Vext'],data_JV['Jext']/10,label=label,color='k')
             if max_slopesf > 2:
                 slopemax = max(slopemax,max(slopesf))
-                # ax1.plot(V1f,J1f/10,marker='s',color=colors[i])
-                # ax1.plot(Vinf,Jinf/10,marker='^',color=colors[i])
-                # ax1.plot(V2f,J2f/10,marker='o',color=colors[i])
-                # ax1.plot(V_slopef,tang_val_V1f/10,'--',color=colors[i],linewidth=2)
-                # ax1.plot(V_slopef,tang_val_V2f/10,'--',color=colors[i],linewidth=2)
-                # ax1.plot(V_slopef,tang_val_V3f/10,'--',color=colors[i],linewidth=2)
+                if ions == 1e21:
+                    ax1.plot(V1f,J1f/10,marker='s',color='k',markersize=15)
+                    ax1.plot(Vinf,Jinf/10,marker='^',color='k',markersize=15)
+                    ax1.plot(V2f,J2f/10,marker='o',color='k',markersize=15)
+                    ax1.plot(V_slopef,tang_val_V1f/10,'-.',color='k',linewidth=2)
+                    ax1.plot(V_slopef,tang_val_V2f/10,'--',color='k',linewidth=2)
+                    ax1.plot(V_slopef,tang_val_V3f/10,':',color='k',linewidth=2)
             minVminMG = min(minVminMG,VminMG)
             maxVmaxMG = max(maxVmaxMG,VmaxMG)
-            ax2.plot(V_slopef,slopesf,label=label,color=colors[i])
-            ax2.axvspan(VminMG, VmaxMG, color=colors[i], alpha=0.2,zorder=idx)
+            ax3.plot(V_slopef,slopesf,label=label,color=colors[i])
+            ax3.axvspan(VminMG, VmaxMG, color=colors[i], alpha=0.2,zorder=idx)
             idx -= 1
 
 
         if max_slopesf > 2:
-            ax3.plot((traps_pero-ions)/1e6,calc_net_charge(V1f,L_pero,eps_r_pero)/1e6,marker='s',color=colors[i])
-            ax3.plot((traps_pero-ions)/1e6,calc_net_charge(Vinf,L_pero,eps_r_pero)/1e6,marker='^',color=colors[i])
-            ax3.plot((traps_pero-ions)/1e6,calc_net_charge(V2f,L_pero,eps_r_pero)/1e6,marker='o',color=colors[i])
+            ax4.plot((traps_pero-ions)/1e6,calc_net_charge(V1f,L_pero,eps_r_pero)/1e6,marker='s',color=colors[i])
+            ax4.plot((traps_pero-ions)/1e6,calc_net_charge(Vinf,L_pero,eps_r_pero)/1e6,marker='^',color=colors[i])
+            ax4.plot((traps_pero-ions)/1e6,calc_net_charge(V2f,L_pero,eps_r_pero)/1e6,marker='o',color=colors[i])
         # add diagonal line
-        ax3.plot([1e20/1e6,1e23/1e6],[1e20/1e6,1e23/1e6],'--',color='black')
+        ax4.plot([1e20/1e6,1e23/1e6],[1e20/1e6,1e23/1e6],'--',color='black')
         # if ions > 0:
         #     # plot diagonal - ions
         #     ax3.plot([(ions+1e21)/1e6,1e23/1e6],[1e21/1e6,(1e23-ions)/1e6],'--',color='black')
         # horizontal line at trap density
-        ax3.axhline(y=traps_pero/1e6,linestyle='-',color='black')
+        ax4.axhline(y=traps_pero/1e6,linestyle='-',color='black')
         # grey shadow ntmin to ntmax
-        ax3.axvspan(1e20/1e6, calc_nt_min(L_pero,eps_r_pero,295)/1e6, color='lightgray', alpha=0.75,zorder=-1)
+        ax4.axvspan(1e20/1e6, calc_nt_min(L_pero,eps_r_pero,295)/1e6, color='lightgray', alpha=0.75,zorder=-1)
         # ax3.axvspan(calc_nt_min(L_pero,eps_r_pero,295)/1e6,3*calc_nt_min(L_pero,eps_r_pero,295)/1e6, color='lightgray', alpha=0.05,zorder=-2)
 
     ax1.set_yscale('log')
@@ -1493,37 +1497,53 @@ def run_fig_2(L_pero, eps_r_pero, ions_bulk_list, traps_pero, Vmax, Vscan, NP, t
     ax1.set_ylim([10**np.floor(np.log10(minJ)-1),1e7])#10**np.floor(np.log10(maxJ)+1)])
     ax1.set_xlabel('Applied voltage [V]')
     ax1.grid(True,which='both',axis='both',color='lightgray', linestyle='-')
+    legend_elements = [Line2D([0], [0], marker='s', color='None', label='V$_{ons}$', markerfacecolor='k', markersize=15),
+                        Line2D([0], [0], marker='^', color='None', label='V$_{inf}$', markerfacecolor='k', markersize=15),
+                        Line2D([0], [0], marker='o', color='None', label='V$_{end}$ = V$_{TFL}$', markerfacecolor='k', markersize=15),
+                        Line2D([0], [0], linestyle='-.', color='k', label='Diff./Ohmic s = 1', markersize=15),
+                        Line2D([0], [0], linestyle='--', color='k', label='TFL s > 2', markersize=15),
+                        Line2D([0], [0], linestyle=':', color='k', label='SCLC s = 2', markersize=15)]
+    ax1.legend(handles=legend_elements, loc='upper left',ncol=2,fontsize=22,frameon=True)
 
-    ax2.set_yscale('linear')
-    ax2.set_ylim([0,int(slopemax)+1])
-    ticks = ax2.get_yticks()
+    ax2.set_yscale('log')
+    # ax1.set_ylim([1e-8,1e7])
+    ax2.set_ylabel('Current density [mA m$^{-2}$]')
+    ax2.set_xscale('log')
+    ax2.set_xlim([1e-2,Vmax])
+    ax2.set_ylim([10**np.floor(np.log10(minJ)-1),1e7])#10**np.floor(np.log10(maxJ)+1)])
+    ax2.set_xlabel('Applied voltage [V]')
+    ax2.grid(True,which='both',axis='both',color='lightgray', linestyle='-')
+
+    ax3.set_yscale('linear')
+    ax3.set_ylim([0,int(slopemax)+1])
+    ticks = ax3.get_yticks()
     ticks = ticks[ticks>3]
     ticks = np.append(ticks,[1,2])
 
     ticks = np.unique(ticks)
     ticks = np.sort(ticks)
-    ax2.set_yticks(ticks)
+    ax3.set_yticks(ticks)
 
-    ax2.axhline(y=1, color='k', linestyle='-')
-    ax2.axhline(y=2, color='k', linestyle='-')
-    ax2.set_xscale('log')
-    ax2.set_xlabel('Applied voltage [V]')
-    ax2.set_ylabel('Slope [-]')
-    ax2.set_xlim([1e-2,Vmax])
-    ax2.set_ylim([0,int(slopemax)+1])
-    ax2.grid(True,which='both',axis='both',color='lightgray', linestyle='-')
+    ax3.axhline(y=1, color='k', linestyle='-')
+    ax3.axhline(y=2, color='k', linestyle='-')
+    ax3.set_xscale('log')
+    ax3.set_xlabel('Applied voltage [V]')
+    ax3.set_ylabel('Slope [-]')
+    ax3.set_xlim([1e-2,Vmax])
+    ax3.set_ylim([0,int(slopemax)+1])
+    ax3.grid(True,which='both',axis='both',color='lightgray', linestyle='-')
     # add arrow between VminMG and VmaxMG
-    ax2.annotate('', xy=(minVminMG, int(slopemax)+1), xytext=(maxVmaxMG, int(slopemax)+1), arrowprops=dict(arrowstyle='<->',color='black',linewidth=3))
+    ax3.annotate('', xy=(minVminMG, int(slopemax)+1), xytext=(maxVmaxMG, int(slopemax)+1), arrowprops=dict(arrowstyle='<->',color='black',linewidth=3))
     # text in the middle of the arrow on a log scale
 
-    ax2.text(minVminMG + 10**((np.log10(minVminMG)+np.log10(maxVmaxMG))/2), int(slopemax)+1.5, 'MG region', fontsize=20, ha='center')
-    ax3.set_xscale('log')
-    ax3.set_yscale('log')
-    ax3.set_ylabel('Calc. density [cm$^{-3}$]')
-    ax3.set_xlabel('Net charge density [cm$^{-3}$]')
-    ax3.grid(True,which='both',axis='both',color='gray', linestyle='-',zorder=-1)
-    ax3.set_xlim([1e20/1e6,5e22/1e6])
-    ax3.set_ylim([1e20/1e6,5e22/1e6])
+    ax3.text(minVminMG + 10**((np.log10(minVminMG)+np.log10(maxVmaxMG))/2), int(slopemax)+1.5, 'MG region', fontsize=20, ha='center')
+    ax4.set_xscale('log')
+    ax4.set_yscale('log')
+    ax4.set_ylabel('Calc. density [cm$^{-3}$]')
+    ax4.set_xlabel('Net charge density [cm$^{-3}$]')
+    ax4.grid(True,which='both',axis='both',color='gray', linestyle='-',zorder=-1)
+    ax4.set_xlim([1e20/1e6,5e22/1e6])
+    ax4.set_ylim([1e20/1e6,5e22/1e6])
 
     # custum legend
     legend_elements = [Line2D([0], [0], marker='s', color='None', label='V$_{ons}$', markerfacecolor='k', markersize=10),
@@ -1534,7 +1554,7 @@ def run_fig_2(L_pero, eps_r_pero, ions_bulk_list, traps_pero, Vmax, Vscan, NP, t
         legend_elements.append(Line2D([0], [0], linestyle='--', color='k', label='N$_{net}}$', markersize=10))
     # add lightgrey shadow
     legend_elements.append(Patch(facecolor='lightgray', edgecolor='black',label='N$_{net}$ < N$_{min}$',alpha=0.75))
-    ax3.legend(handles=legend_elements, loc='lower right',ncol=2,fontsize=20,frameon=True)
+    ax4.legend(handles=legend_elements, loc='lower right',ncol=2,fontsize=20,frameon=True)
 
     # ticks = []
     # for i in ions_bulk_list:
@@ -1553,10 +1573,10 @@ def run_fig_2(L_pero, eps_r_pero, ions_bulk_list, traps_pero, Vmax, Vscan, NP, t
     # ax4.grid(b=True,which='both',axis='y',zorder=-1)
 
     # add super title to axes
-    ax1.set_title('a)',position=(-0.1,0.97))
-    ax2.set_title('b)',position=(-0.1,0.97))
-    ax3.set_title('c)',position=(-0.1,0.97))
-    # ax4.set_title('d)',position=(-0.25,0.95))
+    ax1.set_title('a)',position=(-0.05,0.97))
+    ax2.set_title('b)',position=(-0.05,0.97))
+    ax3.set_title('c)',position=(-0.05,0.97))
+    ax4.set_title('d)',position=(-0.05,0.95))
 
     # add colorbar to plot for scan speeds log scale
     custom_colors = plt.cm.viridis(np.linspace(0,1,len(ions_bulk_list)+1))
@@ -1574,10 +1594,10 @@ def run_fig_2(L_pero, eps_r_pero, ions_bulk_list, traps_pero, Vmax, Vscan, NP, t
     sm.set_array([])
 
     from mpl_toolkits.axes_grid1 import make_axes_locatable
-    divider1 = make_axes_locatable(ax3)
-    cax3= divider1.append_axes("right", size="5%", pad=0.05)
-    cbar3 = plt.colorbar(sm, cax=cax3)
-    cbar3.set_label('Ion density [m$^{-3}$]')
+    divider1 = make_axes_locatable(ax4)
+    cax4= divider1.append_axes("right", size="5%", pad=0.05)
+    cbar4 = plt.colorbar(sm, cax=cax4)
+    cbar4.set_label('Ion density [m$^{-3}$]')
 
     plt.tight_layout()
 

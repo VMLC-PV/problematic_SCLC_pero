@@ -1,0 +1,30 @@
+Version 5.13
+Size of reals used in simulation: 10 bytes
+Timestamp at start: 8-8-24 11:11:13
+Reading in of parameters:
+Read parameters for layer 1 from ../../orga_TL.txt
+l2.L = 5E-7
+l2.N_anion = 2E21
+l2.N_cation = 2E21
+l2.N_t_bulk = 1E22
+l2.C_p_bulk = 0
+Read parameters for layer 2 from ../../pero.txt
+Read parameters for layer 3 from ../../orga_TL.txt
+R_shunt = 0.05
+NP = 550
+tolPois = 1E-7
+tolDens = 1E-7
+couplePC = 10
+minAcc = 0.1
+maxAcc = 0.1
+failureMode = 2
+grad = 4
+timeout = -1
+tVGFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/ZimT/tVG_92a24f13-a1bf-4b32-a653-9b0edbf9ac72.txt
+tJFile = /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/ZimT/tj_92a24f13-a1bf-4b32-a653-9b0edbf9ac72.dat
+varFile = none
+logFile = log_92a24f13-a1bf-4b32-a653-9b0edbf9ac72.txt
+Read simulation setup from /mnt/c/Users/lecor/Desktop/GitHub/problematic_SCLC_pero/SIMsalabim/ZimT/simulation_setup_sclc_tl.txt
+0 did not converge.
+Timestamp at end: 8-8-24 11:12:53
+Total run time: 99.660 seconds.
